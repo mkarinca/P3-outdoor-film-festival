@@ -6,34 +6,97 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Ubuntu:wght@300;500;700&display=swap"
+        rel="stylesheet">
+
+    <!--Fontawesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" class="rel">
 
-    <title>Hello, world!</title>
+    <title>Boston Outdoor Film Festival</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-info mb-4">
-        <a class="navbar-brand" href="#">Bootstrap Project</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
+
+    <section id="header">
+        <div class="container pb-4">
+            <nav class="navbar navbar-expand-md navbar-light mb-4">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="/images/watch-it-outside-boston-logo.png" class="logo-img"
+                        alt="watch-it-outside-boston-logo" loading="lazy">
+                    <span class="logo-text">BOSTON OFF</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Reservations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <div class="col-lg-8">
+                    <img class="title-image" src="/images/watchi-it-outside-boston-bg.jpg" alt="title-image"></div>
+                <div class="hero-text col-lg-4 pt-4 text-left ">
+                    <h1>Watch It Outside Boston</h1>
+                    <p>Summer is here and warm weather calls for outdoor fun. Here's a great list of Summer Movies under
+                        the stars in Boston Public Garden. Make your reservation Free Now!...</p>
+                    <button type="button" class="btn btn-warning btn-block mt-5 rounded-pill ">
+                        <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
+                        Pre-Register (Free)</button>
+                    <button type="button" class="btn btn-outline-dark btn-block mt-3 rounded-pill">
+                        <i class="fas fa-calendar-alt"></i> <span class="btn-text">Check Out Schedule</span> </button>
+                </div>
+    </section>
+
+    <div class="bg-curve"></div>
+
+    <section id="about-us">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-12 text-center">
+                    <h1 class="about-us text-center mt-4">
+                        Boston Outside Film Festival
+                    </h1>
+                    <p class="about-us-text mt-3">The Boston Outdoor Film Festival (BOFF), is an International,
+                        competitive
+                        festival. BOFF mission
+                        is to provide a public forum in Boston in order to advance public interest in films and the
+                        independent production of films. To draw worldwide attention to Boston as a center for cinema.
+                        To encourage the rights of all Boston residents to access and experience the power of
+                        independent filmmaking, and to promote artistic excellence and the creative freedom of artists
+                        without censure. Watch It Outside Boston, is a not-for-profit organization</p>
+                </div>
+
+            </div>
         </div>
-    </nav>
+    </section>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

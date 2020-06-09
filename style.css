@@ -1,0 +1,92 @@
+body {
+    font-family: "Montserrat";
+    background-color: #ffc107;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+}
+
+#header {
+    background-color: #F3E2CB;
+}
+
+.navbar {
+    padding: 8px 0;
+}
+
+
+.navbar-brand {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: black;
+    font-family: "Ubuntu";
+    font-weight: 700;
+}
+
+.logo-img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    padding-left: 10px;
+}
+
+.title-image {
+    width: 100%;
+    border-radius: 30px;
+}
+
+.hero-text h1,
+.about-us {
+    font-size: 2rem;
+}
+
+.btn {
+    font-weight: 500;
+    max-width: 350px;
+}
+
+.btn-text {
+    margin-left: 8px;
+}
+
+.fa-ticket-alt {
+    transform: rotate(-45deg);
+}
+
+.bg-curve {
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+}
+
+.bg-curve::before {
+    border-radius: 50%;
+    position: absolute;
+    background: #F3E2CB;
+    right: -100px;
+    left: -100px;
+    top: -30px;
+    content: '';
+    bottom: 0;
+}
+
+.about-us::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    margin: 15px auto;
+    background-color: #01395f;
+}
