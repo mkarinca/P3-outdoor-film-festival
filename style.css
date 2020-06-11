@@ -1,6 +1,8 @@
 body {
     font-family: "Montserrat";
     background-color: #ffc107;
+    font-weight: 500;
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -19,7 +21,6 @@ h6 {
 .navbar {
     padding: 8px 0;
 }
-
 
 .navbar-brand {
     font-family: "Ubuntu";
@@ -52,9 +53,18 @@ h6 {
     font-size: 2rem;
 }
 
-.btn {
+.btn-lg {
+    font-size: 1rem;
+}
+
+.btn-header {
     font-weight: 500;
     max-width: 350px;
+}
+
+.btn-modal {
+    font-weight: 500;
+    margin: 1.2rem 0 0 auto;
 }
 
 .btn-text {
@@ -88,5 +98,22 @@ h6 {
     width: 60px;
     height: 2px;
     margin: 15px auto;
-    background-color: #01395f;
+    background-color: black;
+}
+
+.modal-header {
+    border-bottom: 1px solid #3c4343;
+}
+
+.modal-content {
+    background-color: #F3E2CB;
+}
+
+#schedule {
+    margin: 50px auto;
+    background-color: #F3E2CB;
+}
+
+.nav-tabs {
+    border-bottom: 1px solid black;
 }
