@@ -5,6 +5,10 @@ body {
     scroll-behavior: smooth;
 }
 
+a {
+    color: black;
+}
+
 h1,
 h2,
 h3,
@@ -116,4 +120,20 @@ h6 {
 
 .nav-tabs {
     border-bottom: 1px solid black;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: #e8d6bd #e8d6bd #e8d6bd;
+    color: black;
+    background-color: #e8d6bd;
+}
+
+.nav-tabs .nav-link.active {
+    color: black;
+    background-color: #f3e2cb;
+    border-color: #000000 #000000 #f3e2cb;
+}
+
+.card {
+    background-color: #ffc107;
 }
