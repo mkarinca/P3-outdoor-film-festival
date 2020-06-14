@@ -136,4 +136,6 @@ h6 {
 
 .card {
     background-color: #ffc107;
+    border-radius: 2rem;
+    overflow: hidden;
 }
