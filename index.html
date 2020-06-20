@@ -56,7 +56,8 @@
                                 <a class="nav-link" href="#schedule">Schedule</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Reservations</a>
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#registerModal"
+                                    data-movie="BOOF 2020">Reservations</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
@@ -120,25 +121,25 @@
                         <div class="form-group">
                             <label for="formMovie">Select a Movie</label>
                             <select class="custom-select" id="formMovie" required>
-                                <optgroup label="5th Aug">
-                                    <option value="1-1">Toy Story 3</option>
-                                    <option value="1-2">Ratatouille</option>
-                                    <option value="1-3">Argo</option>
+                                <optgroup label="Aug 5th">
+                                    <option value="Toy Story 3">Toy Story 3</option>
+                                    <option value="Ratatouille">Ratatouille</option>
+                                    <option value="Argo">Argo</option>
                                 </optgroup>
-                                <optgroup label="6th Aug">
-                                    <option value="2-1">Ratatouille</option>
-                                    <option value="2-2">Toy Story 3</option>
-                                    <option value="2-3">Mad Max:Fury Road</option>
+                                <optgroup label="Aug 6th ">
+                                    <option value="Ratatouille">Ratatouille</option>
+                                    <option value="Toy Story 3">Toy Story 3</option>
+                                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
                                 </optgroup>
-                                <optgroup label="7th Aug">
-                                    <option value="3-1">Toy Story 3</option>
-                                    <option value="3-2">Mad Max:Fury Road</option>
-                                    <option value="3-3">Argo</option>
+                                <optgroup label="Aug 7th ">
+                                    <option value="Toy Story 3">Toy Story 3</option>
+                                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
+                                    <option value="Argo">Argo</option>
                                 </optgroup>
-                                <optgroup label="8th Aug">
-                                    <option value="4-1">Mad Max:Fury Road</option>
-                                    <option value="4-2">Argo</option>
-                                    <option value="4-3">Ratatouille</option>
+                                <optgroup label="Aug 8th ">
+                                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
+                                    <option value="Argo">Argo</option>
+                                    <option value="Ratatouille">Ratatouille</option>
                                 </optgroup>
                             </select>
                         </div>
@@ -146,7 +147,7 @@
                             <label for="formSeat"># of Seats</label>
                             <input type="number" class="form-control" id="formSeat" min="0" max="10" required>
                             <div class="invalid-feedback">
-                                How many seats do you want to reserve?
+                                You can reserve maximum 10 seats.
                             </div>
                         </div>
                         <button type="submit"
@@ -185,94 +186,206 @@
 
     <!--Schedule Section-->
     <section id="schedule">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 ">
-                    <h1 class="about-us text-center my-5">
-                        Schedule
-                    </h1>
-                </div>
-            </div>
+        <div class="d-md-none">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                aria-expanded="true" aria-controls="collapseOne">
+                                Collapsible Group Item #1
+                            </button>
+                        </h5>
+                    </div>
 
-            <!-- Nav tabs -->
-            <div class="row">
-                <div class="col-md-3 ">
-                    <a class="active" id="day1-tab" data-toggle="tab" href="#day1" role="tab" aria-controls="day1"
-                        aria-selected="true">
-                        <div class="card mb-4 shadow-lg">
-                            <img class="img-fluid" src="./images/argo.jpg" alt="Argo">
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-3 ">
-                    <a id="day2-tab" data-toggle="tab" href="#day2" role="tab" aria-controls="day2"
-                        aria-selected="false">
-                        <div class="card mb-4 shadow">
-                            <img class="img-fluid" src="./images/ratatouille.jpg" alt="mad-max">
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                Collapsible Group Item #2
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
-                    </a>
+                    </div>
                 </div>
-                <div class="col-md-3 ">
-                    <a id="day3-tab" data-toggle="tab" href="#day3" role="tab" aria-controls="day3"
-                        aria-selected="false">
-                        <div class="card mb-4 shadow">
-                            <img class="img-fluid" src="./images/mad-max.jpg" alt="moana">
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
+                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                            single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft
+                            beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice
+                            lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you
+                            probably haven't heard of them accusamus labore sustainable VHS.
                         </div>
-                    </a>
-                </div>
-                <div class="col-md-3 ">
-                    <a id="day4-tab" data-toggle="tab" href="#day4" role="tab" aria-controls="day4"
-                        aria-selected="false">
-                        <div class="card mb-4 shadow">
-                            <img class="img-fluid" src="./images/toy-story-3.jpg" alt="Argo">
-                        </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Tab panes -->
-        <div class="tab-content mt-4">
-            <div class="tab-pane active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
-                <div class="container">
-                    <div class="row argo-details p-5">
-                        <div class="col-md-3">
-                            <img src="./images/argo.jpg" class="img-fluid rounded" alt="argo-poster">
-                        </div>
-                        <div class="col-md-9 pl-md-5 pt-md-4">
-                            <h3>Argo (2012)</h3>
-                            <ul class="d-inline-flex">
-                                <li class="list-item">Drama, Thriller</li>
-                                <li class="list-item duration">1h 50min</li>
-                            </ul>
-                            <h5 class="mt-4">Overview</h5>
-                            <p>As the Iranian revolution reaches a boiling point, a CIA 'exfiltration' specialist
-                                concocts a risky plan to free six Americans who have found shelter at the home of the
-                                Canadian ambassador.</p>
-                            <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
-                                href="https://youtu.be/T29kIOXpj6o" role="button" data-fancybox><i
-                                    class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                            </a>
-                            <button type="button" class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill "
-                                data-toggle="modal" data-target="#registerModal">
-                                <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                Pre-Register For this Movie (Free)</button>
 
-                        </div>
+
+        <div class="d-none d-md-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 ">
+                        <h1 class="about-us text-center my-5">
+                            Schedule
+                        </h1>
                     </div>
-                    <!--
-                    <a href="https://youtu.be/T29kIOXpj6o" class="btn btn-primary" data-fancybox> Play here</a>
-                    <h1>Argo</h1>-->
+                </div>
+
+                <!-- Movie tabs -->
+                <div class="row">
+                    <div class="col-md-3 ">
+                        <a class="active" id="day1-tab" data-toggle="tab" href="#day1" role="tab" aria-controls="day1"
+                            aria-selected="true">
+                            <div class="card mb-4 shadow-lg">
+                                <img class="img-fluid" src="./images/argo.jpg" alt="Argo">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                        <a id="day2-tab" data-toggle="tab" href="#day2" role="tab" aria-controls="day2"
+                            aria-selected="false">
+                            <div class="card mb-4 shadow">
+                                <img class="img-fluid" src="./images/ratatouille.jpg" alt="mad-max">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                        <a id="day3-tab" data-toggle="tab" href="#day3" role="tab" aria-controls="day3"
+                            aria-selected="false">
+                            <div class="card mb-4 shadow">
+                                <img class="img-fluid" src="./images/mad-max.jpg" alt="moana">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3 ">
+                        <a id="day4-tab" data-toggle="tab" href="#day4" role="tab" aria-controls="day4"
+                            aria-selected="false">
+                            <div class="card mb-4 shadow">
+                                <img class="img-fluid" src="./images/toy-story-3.jpg" alt="Argo">
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="tab-pane" id="day2" role="tabpanel" aria-labelledby="day2-tab">
-                <h1>Arg2</h1>
+            <!-- Movie Tab panels -->
+            <div class="tab-content mt-4">
+                <div class="tab-pane fade show active argo-details p-5" id="day1" role="tabpanel"
+                    aria-labelledby="day1-tab">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-3">
+                                <img src="./images/argo.jpg" class="img-fluid rounded" alt="argo-poster">
+                            </div>
+                            <div class="col-md-9 pl-md-5 pt-md-4">
+                                <h3>Argo (2012)</h3>
+                                <ul class="d-inline-flex">
+                                    <li class="list-item">Drama, Thriller</li>
+                                    <li class="list-item duration">1h 50min</li>
+                                </ul>
+                                <div class="movie-dates">
+                                    <span class="badge badge-warning">Aug 5<sup>th</sup> - 10 p.m</span>
+                                    <span class="badge badge-warning">Aug 7<sup>th</sup> - 10 p.m</span>
+                                    <span class="badge badge-warning">Aug 8<sup>th</sup> - 8 p.m</span>
+                                </div>
+                                <h5 class="mt-4">Overview</h5>
+                                <p>As the Iranian revolution reaches a boiling point, a CIA 'exfiltration' specialist
+                                    concocts a risky plan to free six Americans who have found shelter at the home of
+                                    the
+                                    Canadian ambassador.</p>
+                                <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
+                                    href="https://youtu.be/T29kIOXpj6o" role="button" data-fancybox><i
+                                        class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
+                                </a>
+                                <button type="button" class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
+                                    data-toggle="modal" data-target="#registerModal" data-movie="Argo">
+                                    <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
+                                    Pre-Register (Free)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade ratatouille-details p-5" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                    <div class="container">
+                        <div class="row ">
+                            <div class="col-md-3">
+                                <img src="./images/ratatouille.jpg" class="img-fluid rounded" alt="ratatouille-poster">
+                            </div>
+                            <div class="col-md-9 pl-md-5 pt-md-4">
+                                <h3>Ratatouille (2007)</h3>
+                                <ul class="d-inline-flex">
+                                    <li class="list-item">Drama, Thriller</li>
+                                    <li class="list-item duration">1h 50min</li>
+                                </ul>
+                                <h6>5<sup>th</sup> Aug - 10 p.m / 7<sup>th</sup> Aug - 10 p.m / 8<sup>th</sup> Aug - 8
+                                    p.m
+                                </h6>
+                                <h5 class="mt-4">Overview</h5>
+                                <p>A rat named Remy dreams of becoming a great French chef despite his family's wishes
+                                    and
+                                    the obvious problem of being a rat in a decidedly rodent-phobic profession. When
+                                    fate
+                                    places Remy in the sewers of Paris, he finds himself ideally situated beneath a
+                                    restaurant made famous by his culinary hero, Auguste Gusteau. Despite the apparent
+                                    dangers of being an unlikely - and certainly unwanted - visitor in the kitchen of a
+                                    fine
+                                    French restaurant, Remy's passion for cooking soon sets into motion a hilarious and
+                                    exciting rat race that turns the culinary world of Paris upside down.</p>
+                                <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
+                                    href="https://youtu.be/jOGDozdW9Yo" role="button" data-fancybox><i
+                                        class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
+                                </a>
+                                <button type="button" class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
+                                    data-toggle="modal" data-target="#registerModal" data-movie="Ratatouille">
+                                    <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
+                                    Pre-Register (Free)</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+                    <h1>Argo3</h1>
+                </div>
+                <div class="tab-pane" id="day4" role="tabpanel" aria-labelledby="day4-tab">
+                    <h1>Argo4</h1>
+                </div>
             </div>
-            <div class="tab-pane" id="day3" role="tabpanel" aria-labelledby="day3-tab">
-                <h1>Argo3</h1>
-            </div>
-            <div class="tab-pane" id="day4" role="tabpanel" aria-labelledby="day4-tab">
-                <h1>Argo4</h1>
-            </div>
+        </div>
+
     </section>
 
 
@@ -306,6 +419,16 @@
                 });
             }, false);
         })();
+
+        //Autoselect Movie in Modal
+        $('#registerModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget)
+            var movie = button.data('movie')
+            var modal = $(this)
+            modal.find('.modal-title').text("Pre-Registeration Form - " +
+                movie)
+            $('#formMovie').val(movie).change();
+        })
     </script>
 </body>
 

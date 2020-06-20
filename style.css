@@ -63,6 +63,7 @@ h1.about-us {
 
 #about-us {
     padding-bottom: 50px;
+    scroll-margin-top: 40px;
 }
 
 .btn-lg {
@@ -123,6 +124,7 @@ h1.about-us {
 
 #schedule {
     background-color: #F3E2CB;
+    scroll-margin-top: 40px;
 }
 
 .card {
@@ -137,6 +139,17 @@ h1.about-us {
     color: white;
 }
 
+.ratatouille-details {
+    background-image: linear-gradient(to right, rgba(8.24%, 37.65%, 74.12%, 1.00) 150px, rgba(14.51%, 44.71%, 81.96%, 0.84) 100%), url(./images/ratatouille-bg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+
 .duration {
     margin-left: 30px;
+}
+
+.btn-movie {
+    font-weight: 500;
 }
