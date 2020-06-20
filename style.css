@@ -2,7 +2,6 @@ body {
     font-family: "Montserrat";
     background-color: #ffc107;
     font-weight: 500;
-    scroll-behavior: smooth;
 }
 
 a {
@@ -20,10 +19,11 @@ h6 {
 
 #header {
     background-color: #F3E2CB;
+    padding-top: 120px;
 }
 
 .navbar {
-    padding: 8px 0;
+    background-color: #ead7bd;
 }
 
 .navbar-brand {
@@ -53,8 +53,16 @@ h6 {
 }
 
 .hero-text h1,
-.about-us {
+h1.about-us {
     font-size: 2rem;
+}
+
+h1.about-us {
+    margin-top: 50px;
+}
+
+#about-us {
+    padding-bottom: 50px;
 }
 
 .btn-lg {
@@ -114,28 +122,21 @@ h6 {
 }
 
 #schedule {
-    margin: 50px auto;
     background-color: #F3E2CB;
 }
 
-.nav-tabs {
-    border-bottom: 1px solid black;
-}
-
-.nav-tabs .nav-link:hover {
-    border-color: #e8d6bd #e8d6bd #e8d6bd;
-    color: black;
-    background-color: #e8d6bd;
-}
-
-.nav-tabs .nav-link.active {
-    color: black;
-    background-color: #f3e2cb;
-    border-color: #000000 #000000 #f3e2cb;
-}
-
 .card {
-    background-color: #ffc107;
-    border-radius: 2rem;
+    background-color: #F3E2CB;
+    border-radius: 1.5rem;
     overflow: hidden;
+}
+
+.argo-details {
+    background: linear-gradient(to right, rgba(12.94%, 14.90%, 22.75%, 1.00) 150px, rgba(20.39%, 22.35%, 29.02%, 0.84) 100%), url(./images/argo-bg.jpg);
+    background-size: cover;
+    color: white;
+}
+
+.duration {
+    margin-left: 30px;
 }

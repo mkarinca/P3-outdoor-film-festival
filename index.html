@@ -13,6 +13,9 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Ubuntu:wght@300;500;700&display=swap"
         rel="stylesheet">
 
+    <!-- Fancy Box -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
     <!--Fontawesome-->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -29,36 +32,37 @@
     <!-- Header Section-->
     <section id="header">
         <div class="container pb-4">
-
             <!-- NavBar -->
-            <nav class="navbar navbar-expand-md navbar-light mb-md-4 navbar-fixed-top">
-                <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="/images/watch-it-outside-boston-logo.png" class="logo-img"
-                        alt="watch-it-outside-boston-logo" loading="lazy">
-                    <span class="logo-text">BOSTON OFF</span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse text-center" id="navbarCollapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about-us">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#schedule">Schedule</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reservations</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
+            <nav class="navbar navbar-expand-md navbar-light mb-md-4 fixed-top">
+                <div class="container">
+                    <a class="navbar-brand d-flex align-items-center" href="#">
+                        <img src="/images/watch-it-outside-boston-logo.png" class="logo-img"
+                            alt="watch-it-outside-boston-logo" loading="lazy">
+                        <span class="logo-text">BOSTON OFF</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about-us">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#schedule">Schedule</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Reservations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
 
@@ -117,24 +121,24 @@
                             <label for="formMovie">Select a Movie</label>
                             <select class="custom-select" id="formMovie" required>
                                 <optgroup label="5th Aug">
-                                    <option value="1-1">Finding Dory</option>
+                                    <option value="1-1">Toy Story 3</option>
                                     <option value="1-2">Ratatouille</option>
                                     <option value="1-3">Argo</option>
                                 </optgroup>
                                 <optgroup label="6th Aug">
-                                    <option value="2-1">Moana</option>
-                                    <option value="2-2">Lego Movie</option>
-                                    <option value="2-3">Arrival</option>
+                                    <option value="2-1">Ratatouille</option>
+                                    <option value="2-2">Toy Story 3</option>
+                                    <option value="2-3">Mad Max:Fury Road</option>
                                 </optgroup>
                                 <optgroup label="7th Aug">
                                     <option value="3-1">Toy Story 3</option>
-                                    <option value="3-2">Wall-e</option>
-                                    <option value="3-3">Gravity</option>
+                                    <option value="3-2">Mad Max:Fury Road</option>
+                                    <option value="3-3">Argo</option>
                                 </optgroup>
                                 <optgroup label="8th Aug">
-                                    <option value="4-1">All is lost</option>
-                                    <option value="4-2">Blackfish</option>
-                                    <option value="4-3">Mad Max:Fury Road</option>
+                                    <option value="4-1">Mad Max:Fury Road</option>
+                                    <option value="4-2">Argo</option>
+                                    <option value="4-3">Ratatouille</option>
                                 </optgroup>
                             </select>
                         </div>
@@ -162,7 +166,7 @@
         <div class="container">
             <div class="row ">
                 <div class="col-lg-12 text-center">
-                    <h1 class="about-us text-center mt-4">
+                    <h1 class="about-us text-center">
                         Boston Outside Film Festival
                     </h1>
                     <p class="about-us-text mt-3 text-justify">The Boston Outdoor Film Festival (BOFF), is an
@@ -183,72 +187,106 @@
     <section id="schedule">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="about-us text-center mt-4">
+                <div class="col-lg-12 ">
+                    <h1 class="about-us text-center my-5">
                         Schedule
                     </h1>
                 </div>
             </div>
 
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs justify-content-center mt-3" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link active" id="day1-tab" data-toggle="tab" href="#day1" role="tab"
-                        aria-controls="day1" aria-selected="true">5<sup>th</sup> Aug</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="day2-tab" data-toggle="tab" href="#day2" role="tab" aria-controls="day2"
-                        aria-selected="false">6<sup>th</sup> Aug</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="day3-tab" data-toggle="tab" href="#day3" role="tab" aria-controls="day3"
-                        aria-selected="false">7<sup>th</sup> Aug</a>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <a class="nav-link" id="day4-tab" data-toggle="tab" href="#day4" role="tab" aria-controls="day4"
-                        aria-selected="false">8<sup>th</sup> Aug</a>
-                </li>
-            </ul>
+            <div class="row">
+                <div class="col-md-3 ">
+                    <a class="active" id="day1-tab" data-toggle="tab" href="#day1" role="tab" aria-controls="day1"
+                        aria-selected="true">
+                        <div class="card mb-4 shadow-lg">
+                            <img class="img-fluid" src="./images/argo.jpg" alt="Argo">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ">
+                    <a id="day2-tab" data-toggle="tab" href="#day2" role="tab" aria-controls="day2"
+                        aria-selected="false">
+                        <div class="card mb-4 shadow">
+                            <img class="img-fluid" src="./images/ratatouille.jpg" alt="mad-max">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ">
+                    <a id="day3-tab" data-toggle="tab" href="#day3" role="tab" aria-controls="day3"
+                        aria-selected="false">
+                        <div class="card mb-4 shadow">
+                            <img class="img-fluid" src="./images/mad-max.jpg" alt="moana">
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-3 ">
+                    <a id="day4-tab" data-toggle="tab" href="#day4" role="tab" aria-controls="day4"
+                        aria-selected="false">
+                        <div class="card mb-4 shadow">
+                            <img class="img-fluid" src="./images/toy-story-3.jpg" alt="Argo">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Tab panes -->
+        <div class="tab-content mt-4">
+            <div class="tab-pane active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+                <div class="container">
+                    <div class="row argo-details p-5">
+                        <div class="col-md-3">
+                            <img src="./images/argo.jpg" class="img-fluid rounded" alt="argo-poster">
+                        </div>
+                        <div class="col-md-9 pl-md-5 pt-md-4">
+                            <h3>Argo (2012)</h3>
+                            <ul class="d-inline-flex">
+                                <li class="list-item">Drama, Thriller</li>
+                                <li class="list-item duration">1h 50min</li>
+                            </ul>
+                            <h5 class="mt-4">Overview</h5>
+                            <p>As the Iranian revolution reaches a boiling point, a CIA 'exfiltration' specialist
+                                concocts a risky plan to free six Americans who have found shelter at the home of the
+                                Canadian ambassador.</p>
+                            <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
+                                href="https://youtu.be/T29kIOXpj6o" role="button" data-fancybox><i
+                                    class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
+                            </a>
+                            <button type="button" class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill "
+                                data-toggle="modal" data-target="#registerModal">
+                                <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
+                                Pre-Register For this Movie (Free)</button>
 
-            <!-- Tab panes -->
-            <div class="tab-content mt-4">
-                <div class="tab-pane active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
-                    <div class="card-deck">
-                        <div class="card mb-4 shadow">
-                            <img class="card-img-top" src="/images/dory-small.png" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Finding Dory</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural
-                                    lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="card-footer">
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card mb-4 shadow">
-                            <img class="card-img-top" src="" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to
-                                    additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                        <div class="card mb-4 shadow">
-                            <img class="card-img-top" src=".../100px200/" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to additional content. This card has even longer content than the first to
-                                    show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
                         </div>
                     </div>
+                    <!--
+                    <a href="https://youtu.be/T29kIOXpj6o" class="btn btn-primary" data-fancybox> Play here</a>
+                    <h1>Argo</h1>-->
                 </div>
+            </div>
+            <div class="tab-pane" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                <h1>Arg2</h1>
+            </div>
+            <div class="tab-pane" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+                <h1>Argo3</h1>
+            </div>
+            <div class="tab-pane" id="day4" role="tabpanel" aria-labelledby="day4-tab">
+                <h1>Argo4</h1>
+            </div>
     </section>
 
-    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+
+    <!-- Custom JavaScript -->
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
@@ -269,17 +307,6 @@
             }, false);
         })();
     </script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-
 </body>
 
 </html>
