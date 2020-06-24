@@ -24,6 +24,7 @@ h6 {
 
 .navbar {
     background-color: #ead7bd;
+
 }
 
 .navbar-brand {
@@ -129,8 +130,17 @@ h1.about-us {
 
 .card {
     background-color: #F3E2CB;
+    border: 0;
     border-radius: 1.5rem;
     overflow: hidden;
+    box-shadow: 8px 14px 38px rgba(39, 44, 49, .6), 1px 3px 8px rgba(39, 44, 49, .3);
+    transition: all .5s ease;
+}
+
+.card:hover {
+    transform: translate3D(0, -1px, 0) scale(1.03);
+    box-shadow: 8px 28px 50px rgba(39, 44, 49, .7), 1px 6px 12px rgba(39, 44, 49, .4);
+    transition: all .4s ease;
 }
 
 .argo-details {
@@ -164,4 +174,8 @@ h1.about-us {
 
 .btn-movie {
     font-weight: 500;
+}
+
+#contact {
+    background-color: #F3E2CB;
 }
