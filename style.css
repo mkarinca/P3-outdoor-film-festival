@@ -1,7 +1,12 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Montserrat";
     background-color: #ffc107;
     font-weight: 500;
+
 }
 
 a {
@@ -178,4 +183,30 @@ h1.about-us {
 
 #contact {
     background-color: #F3E2CB;
+}
+
+#news {
+    scroll-margin-top: 80px;
+}
+
+.card-img-top {
+    max-height: 200px;
+}
+
+.news-logo-img {
+    max-width: 30%;
+}
+
+.gardens-button {
+    max-width: 350px;
+}
+
+@media (max-width:760px) {
+    #header {
+        padding-top: 90px;
+    }
+
+    .news-logo-img {
+        max-width: 70%;
+    }
 }
