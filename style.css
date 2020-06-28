@@ -90,6 +90,17 @@ h1.about-us {
     margin-left: 8px;
 }
 
+.btn-link {
+    color: black
+}
+
+.btn-link.focus,
+.btn-link:focus {
+    text-decoration: none;
+    box-shadow: none;
+    color: black
+}
+
 .fa-ticket-alt {
     transform: rotate(-45deg);
 }
@@ -148,6 +159,11 @@ h1.about-us {
     transition: all .4s ease;
 }
 
+
+.card-header {
+    overflow: hidden;
+}
+
 .argo-details {
     background: linear-gradient(to right, rgba(12.94%, 14.90%, 22.75%, 1.00) 150px, rgba(20.39%, 22.35%, 29.02%, 0.84) 100%), url(./images/argo-bg.jpg);
     background-size: cover;
@@ -204,6 +220,10 @@ h1.about-us {
 @media (max-width:760px) {
     #header {
         padding-top: 90px;
+    }
+
+    #schedule {
+        padding-top: 30px;
     }
 
     .news-logo-img {
