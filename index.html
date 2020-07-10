@@ -1,770 +1,1189 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&display=swap"
-        rel="stylesheet">
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Ubuntu:wght@300;500;700&display=swap"
-        rel="stylesheet">
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&family=Ubuntu:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Fancy Box -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
 
     <!--Fontawesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" class="rel">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" class="rel" />
 
     <title>Boston Outdoor Film Festival</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- Header Section-->
     <section id="header">
-        <div class="container pb-4">
-            <!-- NavBar -->
-            <nav class="navbar navbar-expand-md navbar-light mb-md-4 fixed-top">
-                <div class="container">
-                    <a class="navbar-brand d-flex align-items-center" href="#">
-                        <img src="/images/watch-it-outside-boston-logo.png" class="logo-img"
-                            alt="watch-it-outside-boston-logo" loading="lazy">
-                        <span class="logo-text">BOSTON OFF</span>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                        aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+      <div class="container pb-4">
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-md navbar-light mb-md-4 fixed-top">
+          <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+              <img
+                src="/images/watch-it-outside-boston-logo.png"
+                class="logo-img"
+                alt="watch-it-outside-boston-logo"
+                loading="lazy"
+              />
+              <span class="logo-text">BOSTON OFF</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarCollapse"
+              aria-controls="navbarCollapse"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-                    <div class="collapse navbar-collapse text-center" id="navbarCollapse">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item active" data-toggle="collapse" data-target=".navbar-collapse">
-                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                            </li>
-                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                                <a class="nav-link" href="#about-us">About</a>
-                            </li>
-                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                                <a class="nav-link" href="#schedule">Schedule</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#" data-toggle="modal" data-target="#registerModal"
-                                    data-movie="BOOF 2020">Reservations</a>
-                            </li>
-                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                                <a class="nav-link" href="#news">News</a>
-                            </li>
-                            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-
-            <!-- Hero Section -->
-            <div class="row">
-                <div class="col-lg-8">
-                    <img class="title-image" src="/images/watchi-it-outside-boston-bg.jpg" alt="title-image">
-                </div>
-                <div class="hero-text col-lg-4 pt-2 text-left ">
-                    <h1 class="mt-3 mt-lg-0 text-center text-lg-left">Watch It Outside Boston</h1>
-                    <p class="text-justify text-lg-left" s>Summer is here and warm weather calls for outdoor fun. Here's
-                        a great list of Summer Movies under
-                        the stars in Boston Public Garden on Aug 5<sup>th</sup> through Aug 8<sup>th</sup> from 6 p.m to
-                        midnight. Make your reservation Free Now!...</p>
-                    <button type="button" class="btn btn-warning btn-block mt-2 mt-md-4 mx-auto rounded-pill btn-header"
-                        data-toggle="modal" data-target="#registerModal">
-                        <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                        Pre-Register (Free)</button>
-                    <a class="btn btn-outline-dark btn-block mt-3 mx-auto rounded-pill btn-header" href="#schedule"
-                        role="button"><i class="fas fa-calendar-alt"></i> <span class="btn-text">Check Out
-                            Schedule</span>
-                    </a>
-                </div>
+            <div
+              class="collapse navbar-collapse text-center"
+              id="navbarCollapse"
+            >
+              <ul class="navbar-nav ml-auto">
+                <li
+                  class="nav-item active"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <a class="nav-link" href="#"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li
+                  class="nav-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <a class="nav-link" href="#about-us">About</a>
+                </li>
+                <li
+                  class="nav-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <a class="nav-link" href="#schedule">Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#registerModal"
+                    data-movie="BOOF 2020"
+                    >Reservations</a
+                  >
+                </li>
+                <li
+                  class="nav-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <a class="nav-link" href="#news">News</a>
+                </li>
+                <li
+                  class="nav-item"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                >
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
+          </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="row">
+          <div class="col-lg-8">
+            <img
+              class="title-image"
+              src="/images/watchi-it-outside-boston-bg.jpg"
+              alt="title-image"
+            />
+          </div>
+          <div class="hero-text col-lg-4 pt-2 text-left">
+            <h1 class="mt-3 mt-lg-0 text-center text-lg-left">
+              Watch It Outside Boston
+            </h1>
+            <p class="text-justify text-lg-left">
+              Summer is here and warm weather calls for outdoor fun. Here's a
+              great list of Summer Movies under the stars in Boston Public
+              Garden on Aug 5<sup>th</sup> through Aug 8<sup>th</sup> from 6 p.m
+              to midnight. Make your reservation Free Now!...
+            </p>
+            <button
+              type="button"
+              class="btn btn-warning btn-block mt-2 mt-md-4 mx-auto rounded-pill btn-header"
+              data-toggle="modal"
+              data-target="#registerModal"
+            >
+              <i class="fas fa-ticket-alt"></i
+              ><span class="btn-text"></span> Pre-Register (Free)
+            </button>
+            <a
+              class="btn btn-outline-dark btn-block mt-3 mx-auto rounded-pill btn-header"
+              href="#schedule"
+              role="button"
+              ><i class="fas fa-calendar-alt"></i>
+              <span class="btn-text">Check Out Schedule</span>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <div class="bg-curve d-none d-lg-block"></div>
 
     <!-- Register Modal -->
-    <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Pre-Registration Form</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Pre-Registration Form
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="needs-validation" novalidate>
+              <div class="form-group">
+                <label for="formName">Full Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="formName"
+                  required
+                />
+                <div class="invalid-feedback">
+                  Please enter your Full Name.
                 </div>
-                <div class="modal-body">
-                    <form class="needs-validation" novalidate>
-                        <div class="form-group">
-                            <label for="formName">Full Name</label>
-                            <input type="text" class="form-control" id="formName" required>
-                            <div class="invalid-feedback">
-                                Please enter your Full Name.
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="inputEmail">Email address</label>
-                            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp"
-                                required>
-                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
-                                else.</small>
-                            <div class="invalid-feedback">
-                                Please enter your e-mail.
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="formMovie">Select a Movie</label>
-                            <select class="custom-select" id="formMovie" required>
-                                <optgroup label="Aug 5th">
-                                    <option value="Toy Story 3">Toy Story 3</option>
-                                    <option value="Ratatouille">Ratatouille</option>
-                                    <option value="Argo">Argo</option>
-                                </optgroup>
-                                <optgroup label="Aug 6th ">
-                                    <option value="Ratatouille">Ratatouille</option>
-                                    <option value="Toy Story 3">Toy Story 3</option>
-                                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
-                                </optgroup>
-                                <optgroup label="Aug 7th ">
-                                    <option value="Toy Story 3">Toy Story 3</option>
-                                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
-                                    <option value="Argo">Argo</option>
-                                </optgroup>
-                                <optgroup label="Aug 8th ">
-                                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
-                                    <option value="Argo">Argo</option>
-                                    <option value="Ratatouille">Ratatouille</option>
-                                </optgroup>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="formSeat"># of Seats</label>
-                            <input type="number" class="form-control" id="formSeat" min="0" max="10" required>
-                            <div class="invalid-feedback">
-                                You can reserve maximum 10 seats.
-                            </div>
-                        </div>
-                        <button type="submit"
-                            class="btn btn-warning btn-lg rounded-pill d-block mr-0 ml-auto btn-modal "
-                            data-target="#registerModal">
-                            <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                            Pre-Register (Free)</button>
-                    </form>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="inputEmail"
+                  aria-describedby="emailHelp"
+                  required
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+                <div class="invalid-feedback">
+                  Please enter your e-mail.
                 </div>
-
-            </div>
+              </div>
+              <div class="form-group">
+                <label for="formMovie">Select a Movie</label>
+                <select class="custom-select" id="formMovie" required>
+                  <optgroup label="Aug 5th">
+                    <option value="Toy Story 3">Toy Story 3</option>
+                    <option value="Ratatouille">Ratatouille</option>
+                    <option value="Argo">Argo</option>
+                  </optgroup>
+                  <optgroup label="Aug 6th ">
+                    <option value="Ratatouille">Ratatouille</option>
+                    <option value="Toy Story 3">Toy Story 3</option>
+                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
+                  </optgroup>
+                  <optgroup label="Aug 7th ">
+                    <option value="Toy Story 3">Toy Story 3</option>
+                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
+                    <option value="Argo">Argo</option>
+                  </optgroup>
+                  <optgroup label="Aug 8th ">
+                    <option value="Mad Max:Fury Road">Mad Max:Fury Road</option>
+                    <option value="Argo">Argo</option>
+                    <option value="Ratatouille">Ratatouille</option>
+                  </optgroup>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="formSeat"># of Seats</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="formSeat"
+                  min="0"
+                  max="10"
+                  required
+                />
+                <div class="invalid-feedback">
+                  You can reserve maximum 10 seats.
+                </div>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-warning btn-lg rounded-pill d-block mr-0 ml-auto btn-modal"
+                data-target="#registerModal"
+              >
+                <i class="fas fa-ticket-alt"></i
+                ><span class="btn-text"></span> Pre-Register (Free)
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
     <!--About Section-->
     <section id="about-us">
-        <div class="container">
-            <div class="row ">
-                <div class="col-lg-12 text-center">
-                    <h1 class="about-us text-center">
-                        Boston Outside Film Festival
-                    </h1>
-                    <p class="about-us-text mt-3 text-justify">The Boston Outdoor Film Festival (BOFF), is an
-                        International,
-                        competitive
-                        festival. BOFF mission
-                        is to provide a public forum in Boston in order to advance public interest in films and the
-                        independent production of films. To draw worldwide attention to Boston as a center for cinema.
-                        To encourage the rights of all Boston residents to access and experience the power of
-                        independent filmmaking, and to promote artistic excellence and the creative freedom of artists
-                        without censure. Watch It Outside Boston, is a not-for-profit organization.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h1 class="about-us text-center">
+              Boston Outside Film Festival
+            </h1>
+            <p class="about-us-text mt-3 text-justify">
+              The Boston Outdoor Film Festival (BOFF), is an International,
+              competitive festival. BOFF mission is to provide a public forum in
+              Boston in order to advance public interest in films and the
+              independent production of films. To draw worldwide attention to
+              Boston as a center for cinema. To encourage the rights of all
+              Boston residents to access and experience the power of independent
+              filmmaking, and to promote artistic excellence and the creative
+              freedom of artists without censure. Watch It Outside Boston, is a
+              not-for-profit organization.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!--Schedule Section-->
     <section id="schedule">
-        <div class="d-md-none">
-            <div class="container pb-4">
-                <div class="row">
-                    <div class="col">
-                        <h1 class="about-us text-center my-4">
-                            Schedule
-                        </h1>
-                    </div>
+      <h1 class="about-us text-center pt-5">
+        Schedule
+      </h1>
+      <div class="d-md-none">
+        <div class="container pb-4">
+          <div id="accordion">
+            <div class="card mb-2">
+              <div class="card-header" id="headingOne">
+                <button
+                  class="btn btn-link d-block mx-auto"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <h4>Argo (2012)</h4>
+                </button>
+              </div>
+              <div
+                id="collapseOne"
+                class="collapse show mb-2"
+                aria-labelledby="headingOne"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <img class="img-fluid" src="./images/argo.jpg" alt="Argo" />
+                  <h3 class="my-3">Argo (2012)</h3>
+                  <ul class="d-inline-flex">
+                    <li class="list-item">Drama, Thriller</li>
+                    <li class="list-item duration">1h 50min</li>
+                  </ul>
+                  <div class="movie-dates">
+                    <span class="badge badge-warning"
+                      >Aug 5<sup>th</sup> - 10 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 7<sup>th</sup> - 10 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 8<sup>th</sup> - 8 p.m</span
+                    >
+                  </div>
+                  <h5 class="mt-4">Overview</h5>
+                  <p>
+                    As the Iranian revolution reaches a boiling point, a CIA
+                    'exfiltration' specialist concocts a risky plan to free six
+                    Americans who have found shelter at the home of the Canadian
+                    ambassador.
+                  </p>
+                  <a
+                    class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
+                    href="https://youtu.be/T29kIOXpj6o"
+                    role="button"
+                    data-fancybox
+                    ><i class="far fa-play-circle"></i>
+                    <span class="btn-text">Play Trailer</span>
+                  </a>
+                  <a
+                    class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
+                    data-toggle="modal"
+                    data-target="#registerModal"
+                    data-movie="Argo"
+                  >
+                    <i class="fas fa-ticket-alt"></i
+                    ><span class="btn-text"></span> Pre-Register (Free)</a
+                  >
                 </div>
-                <div id="accordion">
-                    <div class="card mb-2">
-                        <div class="card-header" id="headingOne">
-                            <button class="btn btn-link d-block mx-auto" data-toggle="collapse"
-                                data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <h4>Argo (2012)</h4>
-                            </button>
-                        </div>
-                        <div id="collapseOne" class="collapse show mb-2" aria-labelledby="headingOne"
-                            data-parent="#accordion">
-                            <div class="card-body">
-                                <img class="img-fluid" src="./images/argo.jpg" alt="Argo">
-                                <h3 class="my-3">Argo (2012)</h3>
-                                <ul class="d-inline-flex">
-                                    <li class="list-item">Drama, Thriller</li>
-                                    <li class="list-item duration">1h 50min</li>
-                                </ul>
-                                <div class="movie-dates">
-                                    <span class="badge badge-warning">Aug 5<sup>th</sup> - 10 p.m</span>
-                                    <span class="badge badge-warning">Aug 7<sup>th</sup> - 10 p.m</span>
-                                    <span class="badge badge-warning">Aug 8<sup>th</sup> - 8 p.m</span>
-                                </div>
-                                <h5 class="mt-4">Overview</h5>
-                                <p>As the Iranian revolution reaches a boiling point, a CIA 'exfiltration' specialist
-                                    concocts a risky plan to free six Americans who have found shelter at the home of
-                                    the
-                                    Canadian ambassador.</p>
-                                <a class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
-                                    href="https://youtu.be/T29kIOXpj6o" role="button" data-fancybox><i
-                                        class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                </a>
-                                <a class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
-                                    data-toggle="modal" data-target="#registerModal" data-movie="Argo">
-                                    <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                    Pre-Register (Free)</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-2">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed d-block mx-auto" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <h4>Ratatouille (2007)</h4>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                <img class="img-fluid" src="./images/ratatouille.jpg" alt="mad-max">
-                                <div class="col-md-9 pl-md-5 pt-md-4">
-                                    <h3 class="my-3">Ratatouille (2007)</h3>
-                                    <ul class="d-inline-flex">
-                                        <li class="list-item">Animation, Comedy, Family, Fantasy</li>
-                                        <li class="list-item duration">1h 50min</li>
-                                    </ul>
-                                    <div class="movie-dates">
-                                        <span class="badge badge-warning">Aug 5<sup>th</sup> - 8 p.m</span>
-                                        <span class="badge badge-warning">Aug 6<sup>th</sup> - 6 p.m</span>
-                                        <span class="badge badge-warning">Aug 8<sup>th</sup> - 10 p.m</span>
-                                    </div>
-                                    <h5 class="mt-4">Overview</h5>
-                                    <p>A rat named Remy dreams of becoming a great French chef despite his family's
-                                        wishes
-                                        and
-                                        the obvious problem of being a rat in a decidedly rodent-phobic profession. When
-                                        fate
-                                        places Remy in the sewers of Paris, he finds himself ideally situated beneath a
-                                        restaurant made famous by his culinary hero, Auguste Gusteau. Despite the
-                                        apparent
-                                        dangers of being an unlikely - and certainly unwanted - visitor in the kitchen
-                                        of a
-                                        fine
-                                        French restaurant, Remy's passion for cooking soon sets into motion a hilarious
-                                        and
-                                        exciting rat race that turns the culinary world of Paris upside down.</p>
-                                    <a class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
-                                        href="https://youtu.be/jOGDozdW9Yo" role="button" data-fancybox><i
-                                            class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                    </a>
-                                    <button type="button"
-                                        class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
-                                        data-toggle="modal" data-target="#registerModal" data-movie="Ratatouille">
-                                        <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                        Pre-Register (Free)</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-2">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed d-block mx-auto" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <h4>Mad Max: Fury Road (2015)</h4>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseThree" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                            <div class="card-body">
-                                <img class="img-fluid" src="./images/mad-max.jpg" alt="mad-max">
-                                <div class="col-md-9 pl-md-5 pt-md-4">
-                                    <h3 class="my-3">Mad Max: Fury Road (2015)</h3>
-                                    <ul class="d-inline-flex">
-                                        <li class="list-item">Action, Adventure, Science Fiction</li>
-                                        <li class="list-item duration">1h 45min</li>
-                                    </ul>
-                                    <div class="movie-dates">
-                                        <span class="badge badge-warning">Aug 6<sup>th</sup> - 10 p.m</span>
-                                        <span class="badge badge-warning">Aug 7<sup>th</sup> - 8 p.m</span>
-                                        <span class="badge badge-warning">Aug 8<sup>th</sup> - 6 p.m</span>
-                                    </div>
-                                    <h5 class="mt-4">Overview</h5>
-                                    <p>An apocalyptic story set in the furthest reaches of our planet, in a stark desert
-                                        landscape where humanity is broken, and most everyone is crazed fighting for the
-                                        necessities of life. Within this world exist two rebels on the run who just
-                                        might be
-                                        able to restore order.</p>
-                                    <a class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
-                                        href="https://youtu.be/YWNWi-ZWL3c" role="button" data-fancybox><i
-                                            class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                    </a>
-                                    <button type="button"
-                                        class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
-                                        data-toggle="modal" data-target="#registerModal" data-movie="Mad Max:Fury Road">
-                                        <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                        Pre-Register (Free)</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card mb-2">
-                        <div class="card-header" id="headingFour">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed d-block mx-auto" data-toggle="collapse"
-                                    data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    <h4>Toy Story 3 (2010)</h4>
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                            <div class="card-body">
-                                <img class="img-fluid" src="./images/toy-story-3.jpg" alt="mad-max">
-                                <div class="col-md-9 pl-md-5 pt-md-4">
-                                    <h3 class="my-3">Toy Story 3 (2010)</h3>
-                                    <ul class="d-inline-flex">
-                                        <li class="list-item">Animation, Family, Comedy</li>
-                                        <li class="list-item duration">1h 43min</li>
-                                    </ul>
-                                    <div class="movie-dates">
-                                        <span class="badge badge-warning">Aug 5<sup>th</sup> - 6 p.m</span>
-                                        <span class="badge badge-warning">Aug 6<sup>th</sup> - 8 p.m</span>
-                                        <span class="badge badge-warning">Aug 7<sup>th</sup> - 6 p.m</span>
-                                    </div>
-                                    <h5 class="mt-4">Overview</h5>
-                                    <p>Woody, Buzz, and the rest of Andy's toys haven't been played with in years. With
-                                        Andy
-                                        about to go to college, the gang find themselves accidentally left at a
-                                        nefarious
-                                        day care center. The toys must band together to escape and return home to Andy.
-                                    </p>
-                                    <a class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
-                                        href="https://youtu.be/JcpWXaA2qeg" role="button" data-fancybox><i
-                                            class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                    </a>
-                                    <button type="button"
-                                        class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
-                                        data-toggle="modal" data-target="#registerModal" data-movie="Toy Story 3">
-                                        <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                        Pre-Register (Free)</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </div>
-
-        <div class="d-none d-md-block">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 ">
-                        <h1 class="about-us text-center my-5">
-                            Schedule
-                        </h1>
-                    </div>
-                </div>
-
-                <!-- Movie tabs -->
-                <div class="row">
-                    <ul class="nav nav-tabs d-flex justify-content-between" id="myTab">
-                        <li class="w-25 p-3" role="presentation">
-                            <a id="day1-tab" data-toggle="tab" href="#day1" role="tab" aria-controls="day1"
-                                aria-selected="false">
-                                <div class="card mb-4 ">
-                                    <img class="img-fluid" src="./images/argo.jpg" alt="Argo">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w-25 p-3" role="presentation">
-                            <a id="day1-tab" data-toggle="tab" href="#day2" role="tab" aria-controls="day2"
-                                aria-selected="false">
-                                <div class="card mb-4 ">
-                                    <img class="img-fluid" src="./images/ratatouille.jpg" alt="ratatouille">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w-25 p-3" role="presentation">
-                            <a id="day1-tab" data-toggle="tab" href="#day3" role="tab" aria-controls="day3"
-                                aria-selected="false">
-                                <div class="card mb-4 ">
-                                    <img class="img-fluid" src="./images/mad-max.jpg" alt="mad-max">
-                                </div>
-                            </a>
-                        </li>
-                        <li class="w-25 p-3" role="presentation">
-                            <a id="day1-tab" data-toggle="tab" href="#day4" role="tab" aria-controls="day4"
-                                aria-selected="false">
-                                <div class="card mb-4 ">
-                                    <img class="img-fluid" src="./images/toy-story-3.jpg" alt="Toy-story-3">
-                                </div>
-                            </a>
-                        </li>
+            <div class="card mb-2">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed d-block mx-auto"
+                    data-toggle="collapse"
+                    data-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <h4>Ratatouille (2007)</h4>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseTwo"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <img
+                    class="img-fluid"
+                    src="./images/ratatouille.jpg"
+                    alt="mad-max"
+                  />
+                  <div class="col-md-9 pl-md-5 pt-md-4">
+                    <h3 class="my-3">Ratatouille (2007)</h3>
+                    <ul class="d-inline-flex">
+                      <li class="list-item">
+                        Animation, Comedy, Family, Fantasy
+                      </li>
+                      <li class="list-item duration">1h 50min</li>
                     </ul>
+                    <div class="movie-dates">
+                      <span class="badge badge-warning"
+                        >Aug 5<sup>th</sup> - 8 p.m</span
+                      >
+                      <span class="badge badge-warning"
+                        >Aug 6<sup>th</sup> - 6 p.m</span
+                      >
+                      <span class="badge badge-warning"
+                        >Aug 8<sup>th</sup> - 10 p.m</span
+                      >
+                    </div>
+                    <h5 class="mt-4">Overview</h5>
+                    <p>
+                      A rat named Remy dreams of becoming a great French chef
+                      despite his family's wishes and the obvious problem of
+                      being a rat in a decidedly rodent-phobic profession. When
+                      fate places Remy in the sewers of Paris, he finds himself
+                      ideally situated beneath a restaurant made famous by his
+                      culinary hero, Auguste Gusteau. Despite the apparent
+                      dangers of being an unlikely - and certainly unwanted -
+                      visitor in the kitchen of a fine French restaurant, Remy's
+                      passion for cooking soon sets into motion a hilarious and
+                      exciting rat race that turns the culinary world of Paris
+                      upside down.
+                    </p>
+                    <a
+                      class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
+                      href="https://youtu.be/jOGDozdW9Yo"
+                      role="button"
+                      data-fancybox
+                      ><i class="far fa-play-circle"></i>
+                      <span class="btn-text">Play Trailer</span>
+                    </a>
+                    <button
+                      type="button"
+                      class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
+                      data-toggle="modal"
+                      data-target="#registerModal"
+                      data-movie="Ratatouille"
+                    >
+                      <i class="fas fa-ticket-alt"></i
+                      ><span class="btn-text"></span> Pre-Register (Free)
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
-            <!-- Movie Tab panels -->
-            <div class="tab-content">
-                <div class="tab-pane fade show active argo-details p-5" id="day1" role="tabpanel"
-                    aria-labelledby="day1-tab">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-md-3">
-                                <img src="./images/argo.jpg" class="img-fluid rounded" alt="argo-poster">
-                            </div>
-                            <div class="col-md-9 pl-md-5 pt-md-4">
-                                <h3>Argo (2012)</h3>
-                                <ul class="d-inline-flex">
-                                    <li class="list-item">Drama, Thriller</li>
-                                    <li class="list-item duration">1h 50min</li>
-                                </ul>
-                                <div class="movie-dates">
-                                    <span class="badge badge-warning">Aug 5<sup>th</sup> - 10 p.m</span>
-                                    <span class="badge badge-warning">Aug 7<sup>th</sup> - 10 p.m</span>
-                                    <span class="badge badge-warning">Aug 8<sup>th</sup> - 8 p.m</span>
-                                </div>
-                                <h5 class="mt-4">Overview</h5>
-                                <p>As the Iranian revolution reaches a boiling point, a CIA 'exfiltration'
-                                    specialist
-                                    concocts a risky plan to free six Americans who have found shelter at the home
-                                    of
-                                    the
-                                    Canadian ambassador.</p>
-                                <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
-                                    href="https://youtu.be/T29kIOXpj6o" role="button" data-fancybox><i
-                                        class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                </a>
-                                <a class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
-                                    data-toggle="modal" data-target="#registerModal" data-movie="Argo">
-                                    <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                    Pre-Register (Free)</a>
-                            </div>
-                        </div>
+            <div class="card mb-2">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed d-block mx-auto"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <h4>Mad Max: Fury Road (2015)</h4>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseThree"
+                class="collapse"
+                aria-labelledby="headingTwo"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <img
+                    class="img-fluid"
+                    src="./images/mad-max.jpg"
+                    alt="mad-max"
+                  />
+                  <div class="col-md-9 pl-md-5 pt-md-4">
+                    <h3 class="my-3">Mad Max: Fury Road (2015)</h3>
+                    <ul class="d-inline-flex">
+                      <li class="list-item">
+                        Action, Adventure, Science Fiction
+                      </li>
+                      <li class="list-item duration">1h 45min</li>
+                    </ul>
+                    <div class="movie-dates">
+                      <span class="badge badge-warning"
+                        >Aug 6<sup>th</sup> - 10 p.m</span
+                      >
+                      <span class="badge badge-warning"
+                        >Aug 7<sup>th</sup> - 8 p.m</span
+                      >
+                      <span class="badge badge-warning"
+                        >Aug 8<sup>th</sup> - 6 p.m</span
+                      >
                     </div>
+                    <h5 class="mt-4">Overview</h5>
+                    <p>
+                      An apocalyptic story set in the furthest reaches of our
+                      planet, in a stark desert landscape where humanity is
+                      broken, and most everyone is crazed fighting for the
+                      necessities of life. Within this world exist two rebels on
+                      the run who just might be able to restore order.
+                    </p>
+                    <a
+                      class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
+                      href="https://youtu.be/YWNWi-ZWL3c"
+                      role="button"
+                      data-fancybox
+                      ><i class="far fa-play-circle"></i>
+                      <span class="btn-text">Play Trailer</span>
+                    </a>
+                    <button
+                      type="button"
+                      class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
+                      data-toggle="modal"
+                      data-target="#registerModal"
+                      data-movie="Mad Max:Fury Road"
+                    >
+                      <i class="fas fa-ticket-alt"></i
+                      ><span class="btn-text"></span> Pre-Register (Free)
+                    </button>
+                  </div>
                 </div>
-                <div class="tab-pane fade ratatouille-details p-5" id="day2" role="tabpanel" aria-labelledby="day2-tab">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-md-3">
-                                <img src="./images/ratatouille.jpg" class="img-fluid rounded" alt="ratatouille-poster">
-                            </div>
-                            <div class="col-md-9 pl-md-5 pt-md-4">
-                                <h3>Ratatouille (2007)</h3>
-                                <ul class="d-inline-flex">
-                                    <li class="list-item">Animation, Comedy, Family, Fantasy</li>
-                                    <li class="list-item duration">1h 50min</li>
-                                </ul>
-                                <div class="movie-dates">
-                                    <span class="badge badge-warning">Aug 5<sup>th</sup> - 8 p.m</span>
-                                    <span class="badge badge-warning">Aug 6<sup>th</sup> - 6 p.m</span>
-                                    <span class="badge badge-warning">Aug 8<sup>th</sup> - 10 p.m</span>
-                                </div>
-                                <h5 class="mt-4">Overview</h5>
-                                <p>A rat named Remy dreams of becoming a great French chef despite his family's
-                                    wishes
-                                    and
-                                    the obvious problem of being a rat in a decidedly rodent-phobic profession. When
-                                    fate
-                                    places Remy in the sewers of Paris, he finds himself ideally situated beneath a
-                                    restaurant made famous by his culinary hero, Auguste Gusteau. Despite the
-                                    apparent
-                                    dangers of being an unlikely - and certainly unwanted - visitor in the kitchen
-                                    of a
-                                    fine
-                                    French restaurant, Remy's passion for cooking soon sets into motion a hilarious
-                                    and
-                                    exciting rat race that turns the culinary world of Paris upside down.</p>
-                                <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
-                                    href="https://youtu.be/jOGDozdW9Yo" role="button" data-fancybox><i
-                                        class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                </a>
-                                <button type="button" class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
-                                    data-toggle="modal" data-target="#registerModal" data-movie="Ratatouille">
-                                    <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                    Pre-Register (Free)</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade mad-max-details p-5" id="day3" role="tabpanel" aria-labelledby="day3-tab">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-md-3">
-                                <img src="./images/mad-max.jpg" class="img-fluid rounded" alt="madmax-poster">
-                            </div>
-                            <div class="col-md-9 pl-md-5 pt-md-4">
-                                <h3>Mad Max: Fury Road (2015)</h3>
-                                <ul class="d-inline-flex">
-                                    <li class="list-item">Action, Adventure, Science Fiction</li>
-                                    <li class="list-item duration">1h 45min</li>
-                                </ul>
-                                <div class="movie-dates">
-                                    <span class="badge badge-warning">Aug 6<sup>th</sup> - 10 p.m</span>
-                                    <span class="badge badge-warning">Aug 7<sup>th</sup> - 8 p.m</span>
-                                    <span class="badge badge-warning">Aug 8<sup>th</sup> - 6 p.m</span>
-                                </div>
-                                <h5 class="mt-4">Overview</h5>
-                                <p>An apocalyptic story set in the furthest reaches of our planet, in a stark desert
-                                    landscape where humanity is broken, and most everyone is crazed fighting for the
-                                    necessities of life. Within this world exist two rebels on the run who just
-                                    might be
-                                    able to restore order.</p>
-                                <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
-                                    href="https://youtu.be/YWNWi-ZWL3c" role="button" data-fancybox><i
-                                        class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                </a>
-                                <button type="button" class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
-                                    data-toggle="modal" data-target="#registerModal" data-movie="Mad Max:Fury Road">
-                                    <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                    Pre-Register (Free)</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade toystory-details p-5" id="day4" role="tabpanel" aria-labelledby="day4-tab">
-                    <div class="container">
-                        <div class="row ">
-                            <div class="col-md-3">
-                                <img src="./images/toy-story-3.jpg" class="img-fluid rounded" alt="toy-story-3-poster">
-                            </div>
-                            <div class="col-md-9 pl-md-5 pt-md-4">
-                                <h3>Toy Story 3 (2010)</h3>
-                                <ul class="d-inline-flex">
-                                    <li class="list-item">Animation, Family, Comedy</li>
-                                    <li class="list-item duration">1h 43min</li>
-                                </ul>
-                                <div class="movie-dates">
-                                    <span class="badge badge-warning">Aug 5<sup>th</sup> - 6 p.m</span>
-                                    <span class="badge badge-warning">Aug 6<sup>th</sup> - 8 p.m</span>
-                                    <span class="badge badge-warning">Aug 7<sup>th</sup> - 6 p.m</span>
-                                </div>
-                                <h5 class="mt-4">Overview</h5>
-                                <p>Woody, Buzz, and the rest of Andy's toys haven't been played with in years. With
-                                    Andy
-                                    about to go to college, the gang find themselves accidentally left at a
-                                    nefarious
-                                    day care center. The toys must band together to escape and return home to Andy.
-                                </p>
-                                <a class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
-                                    href="https://youtu.be/JcpWXaA2qeg" role="button" data-fancybox><i
-                                        class="far fa-play-circle"></i> <span class="btn-text">Play Trailer</span>
-                                </a>
-                                <button type="button" class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
-                                    data-toggle="modal" data-target="#registerModal" data-movie="Toy Story 3">
-                                    <i class="fas fa-ticket-alt"></i><span class="btn-text"></span>
-                                    Pre-Register (Free)</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+            <div class="card mb-2">
+              <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                  <button
+                    class="btn btn-link collapsed d-block mx-auto"
+                    data-toggle="collapse"
+                    data-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <h4>Toy Story 3 (2010)</h4>
+                  </button>
+                </h5>
+              </div>
+              <div
+                id="collapseFour"
+                class="collapse"
+                aria-labelledby="headingFour"
+                data-parent="#accordion"
+              >
+                <div class="card-body">
+                  <img
+                    class="img-fluid"
+                    src="./images/toy-story-3.jpg"
+                    alt="mad-max"
+                  />
+                  <div class="col-md-9 pl-md-5 pt-md-4">
+                    <h3 class="my-3">Toy Story 3 (2010)</h3>
+                    <ul class="d-inline-flex">
+                      <li class="list-item">Animation, Family, Comedy</li>
+                      <li class="list-item duration">1h 43min</li>
+                    </ul>
+                    <div class="movie-dates">
+                      <span class="badge badge-warning"
+                        >Aug 5<sup>th</sup> - 6 p.m</span
+                      >
+                      <span class="badge badge-warning"
+                        >Aug 6<sup>th</sup> - 8 p.m</span
+                      >
+                      <span class="badge badge-warning"
+                        >Aug 7<sup>th</sup> - 6 p.m</span
+                      >
+                    </div>
+                    <h5 class="mt-4">Overview</h5>
+                    <p>
+                      Woody, Buzz, and the rest of Andy's toys haven't been
+                      played with in years. With Andy about to go to college,
+                      the gang find themselves accidentally left at a nefarious
+                      day care center. The toys must band together to escape and
+                      return home to Andy.
+                    </p>
+                    <a
+                      class="btn btn-danger btn-block mt-md-4 mb-3 mb-md-0 rounded-pill btn-movie"
+                      href="https://youtu.be/JcpWXaA2qeg"
+                      role="button"
+                      data-fancybox
+                      ><i class="far fa-play-circle"></i>
+                      <span class="btn-text">Play Trailer</span>
+                    </a>
+                    <button
+                      type="button"
+                      class="btn btn-warning btn-block mt-1 mt-md-4 ml-md-5 rounded-pill btn-movie"
+                      data-toggle="modal"
+                      data-target="#registerModal"
+                      data-movie="Toy Story 3"
+                    >
+                      <i class="fas fa-ticket-alt"></i
+                      ><span class="btn-text"></span> Pre-Register (Free)
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <div class="d-none d-md-block">
+        <div class="container">
+          <!-- Movie tabs -->
+          <div class="row">
+            <ul class="nav nav-tabs d-flex justify-content-between" id="myTab">
+              <li class="w-25 p-3" role="presentation">
+                <a
+                  id="day1-tab"
+                  data-toggle="tab"
+                  href="#day1"
+                  role="tab"
+                  aria-controls="day1"
+                  aria-selected="false"
+                >
+                  <div class="card mb-4">
+                    <img class="img-fluid" src="./images/argo.jpg" alt="Argo" />
+                  </div>
+                </a>
+              </li>
+              <li class="w-25 p-3" role="presentation">
+                <a
+                  id="day1-tab"
+                  data-toggle="tab"
+                  href="#day2"
+                  role="tab"
+                  aria-controls="day2"
+                  aria-selected="false"
+                >
+                  <div class="card mb-4">
+                    <img
+                      class="img-fluid"
+                      src="./images/ratatouille.jpg"
+                      alt="ratatouille"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="w-25 p-3" role="presentation">
+                <a
+                  id="day1-tab"
+                  data-toggle="tab"
+                  href="#day3"
+                  role="tab"
+                  aria-controls="day3"
+                  aria-selected="false"
+                >
+                  <div class="card mb-4">
+                    <img
+                      class="img-fluid"
+                      src="./images/mad-max.jpg"
+                      alt="mad-max"
+                    />
+                  </div>
+                </a>
+              </li>
+              <li class="w-25 p-3" role="presentation">
+                <a
+                  id="day1-tab"
+                  data-toggle="tab"
+                  href="#day4"
+                  role="tab"
+                  aria-controls="day4"
+                  aria-selected="false"
+                >
+                  <div class="card mb-4">
+                    <img
+                      class="img-fluid"
+                      src="./images/toy-story-3.jpg"
+                      alt="Toy-story-3"
+                    />
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Movie Tab panels -->
+        <div class="tab-content">
+          <div
+            class="tab-pane fade show active argo-details p-5"
+            id="day1"
+            role="tabpanel"
+            aria-labelledby="day1-tab"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                    src="./images/argo.jpg"
+                    class="img-fluid rounded"
+                    alt="argo-poster"
+                  />
+                </div>
+                <div class="col-md-9 pl-md-5 pt-md-4">
+                  <h3>Argo (2012)</h3>
+                  <ul class="d-inline-flex">
+                    <li class="list-item">Drama, Thriller</li>
+                    <li class="list-item duration">1h 50min</li>
+                  </ul>
+                  <div class="movie-dates">
+                    <span class="badge badge-warning"
+                      >Aug 5<sup>th</sup> - 10 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 7<sup>th</sup> - 10 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 8<sup>th</sup> - 8 p.m</span
+                    >
+                  </div>
+                  <h5 class="mt-4">Overview</h5>
+                  <p>
+                    As the Iranian revolution reaches a boiling point, a CIA
+                    'exfiltration' specialist concocts a risky plan to free six
+                    Americans who have found shelter at the home of the Canadian
+                    ambassador.
+                  </p>
+                  <a
+                    class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
+                    href="https://youtu.be/T29kIOXpj6o"
+                    role="button"
+                    data-fancybox
+                    ><i class="far fa-play-circle"></i>
+                    <span class="btn-text">Play Trailer</span>
+                  </a>
+                  <a
+                    class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
+                    data-toggle="modal"
+                    data-target="#registerModal"
+                    data-movie="Argo"
+                  >
+                    <i class="fas fa-ticket-alt"></i
+                    ><span class="btn-text"></span> Pre-Register (Free)</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade ratatouille-details p-5"
+            id="day2"
+            role="tabpanel"
+            aria-labelledby="day2-tab"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                    src="./images/ratatouille.jpg"
+                    class="img-fluid rounded"
+                    alt="ratatouille-poster"
+                  />
+                </div>
+                <div class="col-md-9 pl-md-5 pt-md-4">
+                  <h3>Ratatouille (2007)</h3>
+                  <ul class="d-inline-flex">
+                    <li class="list-item">
+                      Animation, Comedy, Family, Fantasy
+                    </li>
+                    <li class="list-item duration">1h 50min</li>
+                  </ul>
+                  <div class="movie-dates">
+                    <span class="badge badge-warning"
+                      >Aug 5<sup>th</sup> - 8 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 6<sup>th</sup> - 6 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 8<sup>th</sup> - 10 p.m</span
+                    >
+                  </div>
+                  <h5 class="mt-4">Overview</h5>
+                  <p>
+                    A rat named Remy dreams of becoming a great French chef
+                    despite his family's wishes and the obvious problem of being
+                    a rat in a decidedly rodent-phobic profession. When fate
+                    places Remy in the sewers of Paris, he finds himself ideally
+                    situated beneath a restaurant made famous by his culinary
+                    hero, Auguste Gusteau. Despite the apparent dangers of being
+                    an unlikely - and certainly unwanted - visitor in the
+                    kitchen of a fine French restaurant, Remy's passion for
+                    cooking soon sets into motion a hilarious and exciting rat
+                    race that turns the culinary world of Paris upside down.
+                  </p>
+                  <a
+                    class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
+                    href="https://youtu.be/jOGDozdW9Yo"
+                    role="button"
+                    data-fancybox
+                    ><i class="far fa-play-circle"></i>
+                    <span class="btn-text">Play Trailer</span>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
+                    data-toggle="modal"
+                    data-target="#registerModal"
+                    data-movie="Ratatouille"
+                  >
+                    <i class="fas fa-ticket-alt"></i
+                    ><span class="btn-text"></span> Pre-Register (Free)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade mad-max-details p-5"
+            id="day3"
+            role="tabpanel"
+            aria-labelledby="day3-tab"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                    src="./images/mad-max.jpg"
+                    class="img-fluid rounded"
+                    alt="madmax-poster"
+                  />
+                </div>
+                <div class="col-md-9 pl-md-5 pt-md-4">
+                  <h3>Mad Max: Fury Road (2015)</h3>
+                  <ul class="d-inline-flex">
+                    <li class="list-item">
+                      Action, Adventure, Science Fiction
+                    </li>
+                    <li class="list-item duration">1h 45min</li>
+                  </ul>
+                  <div class="movie-dates">
+                    <span class="badge badge-warning"
+                      >Aug 6<sup>th</sup> - 10 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 7<sup>th</sup> - 8 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 8<sup>th</sup> - 6 p.m</span
+                    >
+                  </div>
+                  <h5 class="mt-4">Overview</h5>
+                  <p>
+                    An apocalyptic story set in the furthest reaches of our
+                    planet, in a stark desert landscape where humanity is
+                    broken, and most everyone is crazed fighting for the
+                    necessities of life. Within this world exist two rebels on
+                    the run who just might be able to restore order.
+                  </p>
+                  <a
+                    class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
+                    href="https://youtu.be/YWNWi-ZWL3c"
+                    role="button"
+                    data-fancybox
+                    ><i class="far fa-play-circle"></i>
+                    <span class="btn-text">Play Trailer</span>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
+                    data-toggle="modal"
+                    data-target="#registerModal"
+                    data-movie="Mad Max:Fury Road"
+                  >
+                    <i class="fas fa-ticket-alt"></i
+                    ><span class="btn-text"></span> Pre-Register (Free)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="tab-pane fade toystory-details p-5"
+            id="day4"
+            role="tabpanel"
+            aria-labelledby="day4-tab"
+          >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-3">
+                  <img
+                    src="./images/toy-story-3.jpg"
+                    class="img-fluid rounded"
+                    alt="toy-story-3-poster"
+                  />
+                </div>
+                <div class="col-md-9 pl-md-5 pt-md-4">
+                  <h3>Toy Story 3 (2010)</h3>
+                  <ul class="d-inline-flex">
+                    <li class="list-item">Animation, Family, Comedy</li>
+                    <li class="list-item duration">1h 43min</li>
+                  </ul>
+                  <div class="movie-dates">
+                    <span class="badge badge-warning"
+                      >Aug 5<sup>th</sup> - 6 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 6<sup>th</sup> - 8 p.m</span
+                    >
+                    <span class="badge badge-warning"
+                      >Aug 7<sup>th</sup> - 6 p.m</span
+                    >
+                  </div>
+                  <h5 class="mt-4">Overview</h5>
+                  <p>
+                    Woody, Buzz, and the rest of Andy's toys haven't been played
+                    with in years. With Andy about to go to college, the gang
+                    find themselves accidentally left at a nefarious day care
+                    center. The toys must band together to escape and return
+                    home to Andy.
+                  </p>
+                  <a
+                    class="btn btn-danger btn-lg mt-md-4 rounded-pill btn-movie"
+                    href="https://youtu.be/JcpWXaA2qeg"
+                    role="button"
+                    data-fancybox
+                    ><i class="far fa-play-circle"></i>
+                    <span class="btn-text">Play Trailer</span>
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-warning btn-lg mt-md-4 ml-5 rounded-pill btn-movie"
+                    data-toggle="modal"
+                    data-target="#registerModal"
+                    data-movie="Toy Story 3"
+                  >
+                    <i class="fas fa-ticket-alt"></i
+                    ><span class="btn-text"></span> Pre-Register (Free)
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!--News Section-->
     <section id="news">
-        <div class="container ">
-            <h1 class="about-us text-center mb-5">
-                News & Announcements
-            </h1>
-            <div class="card-deck">
-                <div class="card">
-                    <img src="./images/app-vote.jpg" class="card-img-top" alt="app-vote">
-                    <div class="card-body">
-                        <h5 class="card-title">Download Our App & Vote !</h5>
-                        <p class="card-text">Download Boston Outdoor Film Festival mobile app and vote your favourite
-                            movie.</p>
-                        <button class="btn btn-warning text-center rounded-pill shadow btn-header d-block mx-auto"><i
-                                class="fas fa-chevron-circle-down mr-2"></i>Download App
-                            Now</button>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 5 days ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/parking.jpg" class="card-img-top" alt="event-parking">
-                    <div class="card-body">
-                        <h5 class="card-title">Event Parking & Directions</h5>
-                        <p class="card-text">Convenient parking is located at the One Seaport Garage on 75
-                            Sleeper Street. Validation rate up to 4 hours: Monday-Friday
-                            after 5PM - $15, and any time Saturday and Sunday - $15
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 7 days ago</small>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./images/free-outdoor-moives.jpg" class="card-img-top" alt="outdoor-movies">
-                    <div class="card-body">
-                        <h5 class="card-title">Free Outdoor Movies in Boston All Summer Long</h5>
-                        <p class="card-text">Switch up your film-viewing experience by
-                            taking your family out to one of these free movie screenings in Boston.
-                        </p>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-muted">Last updated 10 days ago <span class="ml-5"><a
-                                    href="https://www.mommynearest.com/article/where-to-watch-free-outdoor-movies-in-boston-all-summer-long"
-                                    class="btn btn-warning text-center rounded-pill shadow btn-header"
-                                    target="_blank">More</a></span>
-                        </small>
-                    </div>
-                </div>
+      <div class="container">
+        <h1 class="about-us text-center mb-5">
+          News & Announcements
+        </h1>
+        <div class="card-deck">
+          <div class="card">
+            <img
+              src="./images/app-vote.jpg"
+              class="card-img-top"
+              alt="app-vote"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Download Our App & Vote !</h5>
+              <p class="card-text">
+                Download Boston Outdoor Film Festival mobile app and vote your
+                favourite movie.
+              </p>
+              <button
+                class="btn btn-warning text-center rounded-pill shadow btn-header d-block mx-auto"
+              >
+                <i class="fas fa-chevron-circle-down mr-2"></i>Download App Now
+              </button>
             </div>
-            <a href="https://www.boston25news.com/" target="_blank"
-                class="d-block text-center news-logo-img mx-auto"><img src="./images/boston25news-logo.png"
-                    class="img-fluid" alt="boston-globe">
-            </a>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 5 days ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/parking.jpg"
+              class="card-img-top"
+              alt="event-parking"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Event Parking & Directions</h5>
+              <p class="card-text">
+                Convenient parking is located at the One Seaport Garage on 75
+                Sleeper Street. Validation rate up to 4 hours: Monday-Friday
+                after 5PM - $15, and any time Saturday and Sunday - $15
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 7 days ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="./images/free-outdoor-moives.jpg"
+              class="card-img-top"
+              alt="outdoor-movies"
+            />
+            <div class="card-body">
+              <h5 class="card-title">
+                Free Outdoor Movies in Boston All Summer Long
+              </h5>
+              <p class="card-text">
+                Switch up your film-viewing experience by taking your family out
+                to one of these free movie screenings in Boston.
+              </p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"
+                >Last updated 10 days ago
+                <span class="ml-5"
+                  ><a
+                    href="https://www.mommynearest.com/article/where-to-watch-free-outdoor-movies-in-boston-all-summer-long"
+                    class="btn btn-warning text-center rounded-pill shadow btn-header"
+                    target="_blank"
+                    >More</a
+                  ></span
+                >
+              </small>
+            </div>
+          </div>
         </div>
+        <a
+          href="https://www.boston25news.com/"
+          target="_blank"
+          class="d-block text-center news-logo-img mx-auto"
+          ><img
+            src="./images/boston25news-logo.png"
+            class="img-fluid"
+            alt="boston-globe"
+          />
+        </a>
+      </div>
     </section>
 
     <!--Contact Section-->
 
     <section id="contact">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-12 col-lg-4">
-                    <h3 class="about-us text-center">
-                        Venue
-                    </h3>
-                    <p class="about-us-text mt-3 text-center">Public Garden - 4 Charles St, Boston, MA 02108</p>
-                    <p class="about-us-text text-justify">The Public Garden, also known as Boston Public Garden, is a
-                        large park in the heart of Boston, Massachusetts, adjacent to Boston Common. It is a part of the
-                        Emerald Necklace system of parks, and is bounded by Charles Street and Boston Common to the
-                        east, Beacon Street to the north, Arlington Street and Back Bay to the west, and Boylston Street
-                        to the south.</p>
-                    <a href="https://www.boston.gov/parks/public-garden"
-                        class="btn btn-outline-success d-block mx-auto mt-4 mb-sm-4 gardens-button" target="_blank">
-                        <i class="fas fa-tree mr-3"></i>Learn
-                        More
-                        About
-                        Public Gardens</a>
-                </div>
-                <div class="col-12 col-lg-8 pl-md-5 pt-3 pt-md-0">
-                    <div class="embed-responsive-item shadow">
-                        <iframe class="embed-responsive-item"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4169.75173578611!2d-71.07116921544869!3d42.35404082733324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3709e822b60bb%3A0xcbd77f0b5e16e701!2sPublic%20Garden!5e0!3m2!1str!2str!4v1593015397830!5m2!1str!2str"
-                            width="100%" height="400" allowfullscreen aria-hidden="false" style="border:0"
-                            tabindex="0"></iframe>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-12 col-lg-4">
+            <h3 class="about-us text-center">
+              Venue
+            </h3>
+            <p class="about-us-text mt-3 text-center">
+              Public Garden - 4 Charles St, Boston, MA 02108
+            </p>
+            <p class="about-us-text text-justify">
+              The Public Garden, also known as Boston Public Garden, is a large
+              park in the heart of Boston, Massachusetts, adjacent to Boston
+              Common. It is a part of the Emerald Necklace system of parks, and
+              is bounded by Charles Street and Boston Common to the east, Beacon
+              Street to the north, Arlington Street and Back Bay to the west,
+              and Boylston Street to the south.
+            </p>
+            <a
+              href="https://www.boston.gov/parks/public-garden"
+              class="btn btn-outline-success d-block mx-auto mt-4 mb-sm-4 gardens-button"
+              target="_blank"
+            >
+              <i class="fas fa-tree mr-3"></i>Learn More About Public Gardens</a
+            >
+          </div>
+          <div class="col-12 col-lg-8 pl-md-5 pt-3 pt-md-0">
+            <div class="embed-responsive-item shadow">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4169.75173578611!2d-71.07116921544869!3d42.35404082733324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3709e822b60bb%3A0xcbd77f0b5e16e701!2sPublic%20Garden!5e0!3m2!1str!2str!4v1593015397830!5m2!1str!2str"
+                width="100%"
+                height="400"
+                allowfullscreen
+                aria-hidden="false"
+                style="border: 0;"
+                tabindex="0"
+              ></iframe>
             </div>
-            <div class="row pt-5">
-                <div class="col d-flex align-items-center justify-content-center">
-                    <ul class="list-inline">
-                        <li class="list-inline-item mx-3">
-                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f fa-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mx-3">
-                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter fa-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mx-3">
-                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mx-3">
-                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mx-3">
-                            <a href="https://plus.google.com" target="_blank"><i class="fab fa-google-plus-g fa-lg"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mx-3">
-                            <a href="mailto:info@watchitoutside.com" target="_blank"><i
-                                    class="fas fa-envelope fa-lg"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row mt-2">
-                <div class="col-sm-12">
-                    <p class="text-center">© 2020 Boston Outdoor Film Festival.</p>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="row pt-5">
+          <div class="col d-flex align-items-center justify-content-center">
+            <ul class="list-inline">
+              <li class="list-inline-item mx-3">
+                <a href="https://facebook.com" target="_blank"
+                  ><i class="fab fa-facebook-f fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="https://twitter.com" target="_blank"
+                  ><i class="fab fa-twitter fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="https://instagram.com" target="_blank"
+                  ><i class="fab fa-instagram fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="https://linkedin.com" target="_blank"
+                  ><i class="fab fa-linkedin fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="https://plus.google.com" target="_blank"
+                  ><i class="fab fa-google-plus-g fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mx-3">
+                <a href="mailto:info@watchitoutside.com" target="_blank"
+                  ><i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row mt-2">
+          <div class="col-sm-12">
+            <p class="text-center">© 2020 Boston Outdoor Film Festival.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Custom JavaScript -->
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function () {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (
+              form
+            ) {
+              form.addEventListener(
+                "submit",
+                function (event) {
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
 
-        //Autoselect Movie in Modal
-        $('#registerModal').on('show.bs.modal', function (event) {
-            var button = $(event.relatedTarget)
-            var movie = button.data('movie')
-            var modal = $(this)
-            modal.find('.modal-title').text("Pre-Registeration Form - " +
-                movie)
-            $('#formMovie').val(movie).change();
-        })
+      //Autoselect Movie in Modal
+      $("#registerModal").on("show.bs.modal", function (event) {
+        var button = $(event.relatedTarget);
+        var movie = button.data("movie");
+        var modal = $(this);
+        modal.find(".modal-title").text("Pre-Registeration Form - " + movie);
+        $("#formMovie").val(movie).change();
+      });
 
-        //Moving to the top of accordion card header on mobile - Better UX
-        $('.collapse').on('shown.bs.collapse', function (e) {
-            var $card = $(this).closest('.card');
-            $('html,body').animate({
-                scrollTop: $card.offset().top
-            }, 50);
-        });
+      //Moving to the top of accordion card header on mobile - Better UX
+      $(".collapse").on("shown.bs.collapse", function (e) {
+        var $card = $(this).closest(".card");
+        $("html,body").animate(
+          {
+            scrollTop: $card.offset().top,
+          },
+          50
+        );
+      });
     </script>
-</body>
-
+  </body>
 </html>
